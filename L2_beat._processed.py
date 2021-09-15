@@ -11,7 +11,7 @@ import boto3
 import configparser
 import sys
 
-def concatenates_files(raw_data_path, processed_data_path,concatenated_file):
+def concatenates_files(raw_data_path, processed_data_path,concatenated_file) -> object:
     """
     concatenates_files: will concatenate all files from a directory
     
@@ -84,8 +84,11 @@ def main():
     s3_bucket = '1datadirectory'
     s3_repo = 'L2beat/processed/'
     
-    concatenates_files(raw_data_path, processed_data_path,concatenated_file)
-    
+    df = concatenates_files(raw_data_path, processed_data_path,concatenated_file)
+
+    df['daily change'] = df['Value LockedTVL']
+]
+
     upload_s3(output_path +'\\' , output_file, s3_bucket, s3_repo)
     print(concatenated_file + " uploaded to S3!")
     sys.exit()
