@@ -1,5 +1,5 @@
 ## L2beat Web Scraper 
 
 
-Simply testing  Github  for now
+This working scraper is only uploaded as I'm learning Github and Pycharm. , the code is not ideal, but it works
 
