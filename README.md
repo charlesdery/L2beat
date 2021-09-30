@@ -1,5 +1,5 @@
 ## L2beat Web Scraper 
 
 
-Quick and dirty scraping of the main page of the website [L2BEAT](https://l2beat.com/)
+Quick and dirty scraping of [L2BEAT](https://l2beat.com/) main page.
 
